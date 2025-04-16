@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div  class="containerCalculoArea">
+        <div class="tituloAreaTrapezio">
+          <H2>CALCULAR ÁREA DO TRAPÉZIO</H2>
+        </div>
+        <div class="containerValores">
+          <label for="baseMenor">Base Menor</label>
+          <input  onClick="this.select();" type="number" id="baseMenor" name="baseMenor" value="0">
+          <label  for="baseMaior">Base Maior</label>
+          <input onClick="this.select();" type="number" id="baseMaior" name="baseMaior" value="0">
+          <label for="altura">Altura</label>
+          <input onClick="this.select();" type="number" id="altura" name="altura" value="0">
+          <button type="button" id="btValor" onclick="areaTrapezio()" name="botaoArea"> Calcular</button>
+        </div>
+        <div class="containerTrapezio">
+          <div class="trapezio"></div>
+          <h2 id="b">b</h2>
+          <h2 id="B">B</h2>
+          <h2 id="h">h</h2>
+          <div class="hlinha"></div>
+        </div>
+        <div onclick="mostraFormula()" class="formula">
+          <h2 class="valorArea" id="valorArea">A</h2>
+          <h2 class="igual">=</h2>
+          <div class="divisao"></div>
+          <h2 class="mais">+</h2>
+          <h2 class="b">b</h2>
+          <h2 class="B">B</h2>
+          <h2 class="dois">2</h2>
+          <h2 class="h">h</h2>
+          <h2 class="mult">.</h2>
+        </div>
+      </div>
+</body>
+<script src="Script.js"></script>
+</html>
