@@ -2,37 +2,23 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Soma com Condição</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style2.css">
+  <script src="Script2.js"></script>
+  <title>Soma com Condição</title>
 </head>
 <body>
   <h2>Soma Condicional</h2>
-  
-  <label for="num1">Digite o primeiro número:</label>
-  <input type="number" id="num1"><br><br>
-  
-  <label for="num2">Digite o segundo número:</label>
-  <input type="number" id="num2"><br><br>
-  
-  <button onclick="calcular()">Calcular</button>
-  
+ 
+    <label for="num1">Digite o primeiro número:</label>
+    <input type="number" id="num1"><br><br>
+    
+    <label for="num2">Digite o segundo número:</label>
+    <input type="number" id="num2"><br><br>
+    
+    <button onclick="calcular()">Calcular</button>
+ 
   <p id="resultado"></p>
 
-  <script>
-    function calcular() {
-      const n1 = parseFloat(document.getElementById("num1").value);
-      const n2 = parseFloat(document.getElementById("num2").value);
-      let soma = n1 + n2;
-      let resultado;
-
-      if (soma > 20) {
-        resultado = soma + 8;
-        document.getElementById("resultado").innerText = "Resultado (soma > 20, somando 8): " + resultado;
-      } else {
-        resultado = soma - 5;
-        document.getElementById("resultado").innerText = "Resultado (soma ≤ 20, subtraindo 5): " + resultado;
-      }
-    }
-  </script>
 </body>
 </html>
